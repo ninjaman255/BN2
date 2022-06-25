@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" width="28" height="28" tilewidth="64" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="11">
+ <properties>
+  <property name="Background" value="custom"/>
+  <property name="Background Animation" value="/server/assets/custom/backgrounds/bn2YumLandSquare/BG.animation"/>
+  <property name="Background Texture" value="/server/assets/custom/backgrounds/bn2YumLandSquare/BG.png"/>
+  <property name="Background Vel X" type="float" value="0.1"/>
+  <property name="Background Vel Y" type="float" value="0.2"/>
+  <property name="Name" value="YumLand_Junction"/>
+  <property name="Song" value="/server/assets/music/1.47 INTERNET WORLD.ogg"/>
+ </properties>
+ <tileset firstgid="1" source="../assets/tiles/yumLandSquare.tsx"/>
+ <tileset firstgid="2" source="../assets/tiles/tile.tsx"/>
+ <tileset firstgid="23" source="../assets/tiles/warp.tsx"/>
+ <tileset firstgid="29" source="../assets/tiles/Warp_tosqrentr_exe2.tsx"/>
+ <tileset firstgid="33" source="../assets/tiles/Warp_tohp_exe2.tsx"/>
+ <objectgroup id="2" name="Object Layer 1">
+  <object id="1" gid="1" x="126" y="126" width="1014" height="636"/>
+  <object id="2" name="YumLandJunctionToYumLand2" type="Custom Warp" gid="24" x="664" y="248" width="61" height="32" visible="0">
+   <properties>
+    <property name="direction" value="Up Left"/>
+    <property name="warp_name" value="YumLand2ToJunction"/>
+    <property name="warp_to" value="YumLand2"/>
+   </properties>
+  </object>
+  <object id="4" gid="29" x="657.5" y="240.5" width="44" height="29"/>
+  <object id="5" name="YumLandJunctToDenArea1" type="Custom Warp" gid="24" x="56" y="472" width="61" height="32" visible="0">
+   <properties>
+    <property name="direction" value="Down Right"/>
+    <property name="warp_name" value="DenArea1ToYumLandJunct"/>
+    <property name="warp_to" value="default"/>
+   </properties>
+  </object>
+  <object id="6" gid="29" x="241.5" y="48.3182" width="44" height="29"/>
+  <object id="7" gid="29" x="49.625" y="464.5" width="44" height="29"/>
+  <object id="8" name="YumJunctToYumLand" type="Custom Warp" gid="24" x="248" y="56" width="61" height="32" visible="0">
+   <properties>
+    <property name="direction" value="Down Left"/>
+    <property name="warp_name" value="YumLandToJunct"/>
+    <property name="warp_to" value="YumLand"/>
+   </properties>
+  </object>
+  <object id="9" name="JunctionToYumSqr" type="Custom Warp" gid="24" x="472" y="664" width="61" height="32" visible="0">
+   <properties>
+    <property name="direction" value="Up Right"/>
+    <property name="warp_name" value="YumSqrToJunction"/>
+    <property name="warp_to" value="YumLandSquare"/>
+   </properties>
+  </object>
+  <object id="10" gid="33" x="472.5" y="663.5" width="40" height="28"/>
+ </objectgroup>
+ <layer id="1" name="Tile Layer 1" width="28" height="28" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,
+0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,
+0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,0,0,0,2,2,2,2,2,0,0,0,0,
+0,0,0,0,0,0,0,0,2,2,22,0,19,2,2,2,0,0,0,0,2,2,2,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2,2,0,0,0,14,2,2,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2,2,21,0,0,12,2,2,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2,2,2,0,0,0,0,2,2,2,13,11,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,
+2,2,2,2,0,0,0,0,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,
+2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

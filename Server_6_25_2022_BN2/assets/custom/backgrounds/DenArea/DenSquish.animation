@@ -1,0 +1,12 @@
+imagePath="C:/Users/Clevettes/Desktop/8_1_2021 Bn2/assets/custom/backgrounds/DenArea/DenAreaSqueeze.png"
+
+animation state="BG"
+frame duration="0.15" x="0" y="0" w="27" h="32" originx="0" originy="0"
+frame duration="0.15" x="27" y="0" w="27" h="32" originx="0" originy="0"
+frame duration="0.15" x="54" y="0" w="27" h="32" originx="0" originy="0"
+frame duration="0.15" x="81" y="0" w="27" h="32" originx="0" originy="0"
+frame duration="0.15" x="108" y="0" w="27" h="32" originx="0" originy="0"
+frame duration="0.15" x="135" y="0" w="27" h="32" originx="0" originy="0"
+frame duration="0.15" x="162" y="0" w="27" h="32" originx="0" originy="0"
+frame duration="0.15" x="189" y="0" w="27" h="32" originx="0" originy="0"
+frame duration="0.15" x="216" y="0" w="27" h="32" originx="0" originy="0"

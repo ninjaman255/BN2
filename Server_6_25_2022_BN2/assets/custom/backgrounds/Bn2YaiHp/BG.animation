@@ -1,0 +1,5 @@
+imagePath="BG.png"
+
+animation state="Unnamed State"
+frame duration="4" x="0" y="0" w="240" h="160" originx="0" originy="0"
+frame duration="0.05" x="0" y="168" w="240" h="160" originx="0" originy="0"
