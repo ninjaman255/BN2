@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" width="30" height="30" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="65">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="30" height="30" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="66">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/DenArea/DenAreaBG.animation"/>
@@ -15,6 +15,7 @@
  <tileset firstgid="29" source="../assets/tiles/denArea3F2.tsx"/>
  <tileset firstgid="30" source="../assets/tiles/DenAreaTechAnimatedOverlay.tsx"/>
  <tileset firstgid="46" source="../assets/tiles/Shading.tsx"/>
+ <tileset firstgid="55" source="../assets/tiles/Warp_tosqrentr_exe2.tsx"/>
  <objectgroup id="2" name="Object Layer 1">
   <object id="1" gid="28" x="145" y="83" width="1031" height="703"/>
   <object id="4" gid="30" x="512" y="768" width="48" height="25"/>
@@ -201,11 +202,11 @@
    </properties>
    <point/>
   </object>
-  <object id="51" name="Den3ToDenJunction" type="Custom Warp" gid="23" x="800" y="640" width="61" height="32" visible="0">
+  <object id="65" type="Custom Warp" gid="55" x="792.5" y="631.5" width="44" height="29">
    <properties>
-    <property name="direction" value="Up Right"/>
-    <property name="warp_name" value="DenJunctionToDen3"/>
-    <property name="warp_to" value="DenSquareJunction"/>
+    <property name="Direction" value="Up Right"/>
+    <property name="Target Area" value="DenSquareJunction"/>
+    <property name="Target Object" value="14"/>
    </properties>
   </object>
  </objectgroup>
