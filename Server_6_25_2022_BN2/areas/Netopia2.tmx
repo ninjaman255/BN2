@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" width="29" height="33" tilewidth="64" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="13">
+<map version="1.8" tiledversion="1.8.5" orientation="isometric" renderorder="right-down" width="29" height="33" tilewidth="64" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="15">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/Bn2Netopia/BG.animation"/>
@@ -15,6 +15,7 @@
  <tileset firstgid="24" source="../assets/tiles/Conveyor.tsx"/>
  <tileset firstgid="33" source="../assets/tiles/stairs.tsx"/>
  <tileset firstgid="36" source="../assets/tiles/Shading.tsx"/>
+ <tileset firstgid="45" source="../assets/tiles/Warp_tosqrentr_exe2.tsx"/>
  <objectgroup id="2" name="Object Layer 1">
   <object id="1" gid="22" x="-28" y="70" width="1291" height="856"/>
   <object id="3" name="Netopia2ToNetopia1" type="Radius Warp" x="464" y="992">
@@ -76,6 +77,13 @@
  </layer>
  <objectgroup id="4" name="Object Layer 2" offsetx="0" offsety="-16">
   <object id="2" gid="23" x="-12" y="86" width="1291" height="856"/>
+  <object id="14" name="Net2ToJunct" type="Custom Warp" gid="45" x="232" y="40" width="44" height="29">
+   <properties>
+    <property name="Direction" value="Down Right"/>
+    <property name="Target Area" value="NetopiaJunct"/>
+    <property name="Target Object" value="6"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer id="3" name="Tile Layer 2" width="29" height="33" visible="0" offsetx="0" offsety="-16">
   <data encoding="csv">
