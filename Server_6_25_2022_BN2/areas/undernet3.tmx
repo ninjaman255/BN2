@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.0" orientation="isometric" renderorder="right-down" width="31" height="39" tilewidth="64" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="5">
+<map version="1.8" tiledversion="1.8.5" orientation="isometric" renderorder="right-down" width="31" height="39" tilewidth="64" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="7">
  <properties>
   <property name="Background" value="custom"/>
   <property name="Background Animation" value="/server/assets/custom/backgrounds/Undernet/GrayBG.animation"/>
@@ -15,8 +15,26 @@
  <tileset firstgid="24" source="../assets/tiles/warp.tsx"/>
  <tileset firstgid="30" source="../assets/tiles/Shading.tsx"/>
  <tileset firstgid="39" source="../assets/tiles/stairs.tsx"/>
+ <tileset firstgid="42" source="../assets/tiles/Warp_tosqrentr_exe2.tsx"/>
  <objectgroup id="2" name="Object Layer 1">
   <object id="1" gid="2" x="24.5" y="217.5" width="1162" height="791"/>
+  <object id="5" name="Under3ToKoto" type="Radius Warp" x="80" y="656">
+   <properties>
+    <property name="Activation Radius" value="0.8"/>
+    <property name="Arrival Animation" value="arrow_down_left_in"/>
+    <property name="Leave Animation" value="arrow_down_left_out"/>
+    <property name="Target Area" value="UnderKotobuki"/>
+    <property name="Target Object" value="2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="DenShortcut" type="Custom Warp" gid="42" x="248" y="376" width="44" height="29">
+   <properties>
+    <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="default"/>
+    <property name="Target Object" value="141"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer id="1" name="Tile Layer 1" width="31" height="39" visible="0">
   <properties>
@@ -205,7 +223,7 @@
 </data>
  </layer>
  <objectgroup id="9" name="Object Layer 5" offsetx="0" offsety="-64">
-  <object id="3" name="Und3ToUnd2" type="Radius Warp" x="864" y="912">
+  <object id="3" name="Und3ToUnd2" type="Radius Warp" x="848" y="912">
    <properties>
     <property name="Activation Radius" type="float" value="0.8"/>
     <property name="Arrival Animation" value="arrow_down_right_in"/>

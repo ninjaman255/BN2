@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.5" orientation="isometric" renderorder="right-down" width="28" height="28" tilewidth="64" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="11">
+<map version="1.8" tiledversion="1.8.5" orientation="isometric" renderorder="right-down" width="28" height="28" tilewidth="64" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="14">
  <properties>
   <property name="Background" value="custom"/>
-  <property name="Background Animation" value="/server/assets/custom/backgrounds/bn2YumLandSquare/BG.animation"/>
-  <property name="Background Texture" value="/server/assets/custom/backgrounds/bn2YumLandSquare/BG.png"/>
+  <property name="Background Animation" value="/server/assets/custom/backgrounds/Bn2Netopia/BG.animation"/>
+  <property name="Background Texture" value="/server/assets/custom/backgrounds/Bn2Netopia/BG.png"/>
   <property name="Background Vel X" type="float" value="0.1"/>
   <property name="Background Vel Y" type="float" value="0.2"/>
-  <property name="Name" value="YumLand_Junction"/>
+  <property name="Name" value="Netopia_Junction"/>
   <property name="Song" value="/server/assets/music/1.47 INTERNET WORLD.ogg"/>
  </properties>
  <tileset firstgid="1" source="../assets/tiles/yumLandSquare.tsx"/>
@@ -14,44 +14,45 @@
  <tileset firstgid="23" source="../assets/tiles/warp.tsx"/>
  <tileset firstgid="29" source="../assets/tiles/Warp_tosqrentr_exe2.tsx"/>
  <tileset firstgid="33" source="../assets/tiles/Warp_tohp_exe2.tsx"/>
+ <tileset firstgid="37" source="../assets/tiles/netopiajunct.tsx"/>
  <objectgroup id="2" name="Object Layer 1">
-  <object id="1" gid="1" x="126" y="126" width="1014" height="636"/>
-  <object id="4" name="YumJunctToYumLand2" type="Custom Warp" gid="29" x="657.5" y="240.5" width="44" height="29">
+  <object id="11" gid="37" x="127.273" y="133.818" width="1013" height="635"/>
+  <object id="4" name="NetopiaJunctToNet3" type="Custom Warp" gid="29" x="656.875" y="248.125" width="44" height="29">
    <properties>
     <property name="Direction" value="Up Left"/>
-    <property name="Target Area" value="YumLand2"/>
-    <property name="Target Object" value="4"/>
+    <property name="Target Area" value="Netopia3"/>
+    <property name="Target Object" value="41"/>
    </properties>
   </object>
-  <object id="6" name="YumJunctToYumLand" type="Custom Warp" gid="29" x="241.5" y="48.3182" width="44" height="29">
+  <object id="6" name="YumJunctToYumLand" type="Custom Warp" gid="29" x="464.5" y="663.5" width="44" height="29">
    <properties>
-    <property name="Direction" value="Down Left"/>
-    <property name="Target Area" value="YumLand"/>
+    <property name="Direction" value="Up Right"/>
+    <property name="Target Area" value="Netopia2"/>
     <property name="Target Object" value="5"/>
    </properties>
   </object>
-  <object id="7" name="YumJunctToDenArea1" type="Custom Warp" gid="29" x="48" y="464" width="44" height="29">
+  <object id="10" name="NetJunctToSquare" type="Custom Warp" gid="33" x="56" y="480" width="40" height="28">
    <properties>
     <property name="Direction" value="Down Right"/>
-    <property name="Target Area" value="default"/>
-    <property name="Target Object" value="126"/>
+    <property name="Target Area" value="NetopiaSquare"/>
+    <property name="Target Object" value="3"/>
    </properties>
   </object>
-  <object id="10" name="YumJunctToSquare" type="Custom Warp" gid="33" x="472" y="664" width="40" height="28">
+  <object id="13" name="NetJunctToDenArea1" type="Custom Warp" gid="33" x="248" y="64" width="40" height="28">
    <properties>
-    <property name="Direction" value="Up Right"/>
-    <property name="Target Area" value="YumLandSquare"/>
-    <property name="Target Object" value="2"/>
+    <property name="Direction" value="Down Left"/>
+    <property name="Target Area" value="default"/>
+    <property name="Target Object" value="142"/>
    </properties>
   </object>
  </objectgroup>
- <layer id="1" name="Tile Layer 1" width="28" height="28" visible="0">
+ <layer id="1" name="Tile Layer 1" width="28" height="28" visible="0" opacity="0.7">
   <data encoding="csv">
 0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,
 0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,
